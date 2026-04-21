@@ -12,12 +12,13 @@ def main_crip(cripto:str = "bitcoin", moeda_preco:str = "brl" ) -> str:
     Dolar -> usd
     Real  -> brl
     '''
+    
 
     url_crip = "https://api.coingecko.com/api/v3/simple/price"
 
     params = {
-        "ids": cripto,
-        "vs_currencies": moeda_preco,
+        "ids": cripto.lower(),
+        "vs_currencies": moeda_preco.lower(),
         "include_24hr_change": "true"
     }
 

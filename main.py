@@ -8,6 +8,7 @@ from rich.rule import Rule
 from gemini_agent import main_run #arquivo
 from nasa import main_nasa #arquivo
 from cripto import main_crip #arquivo
+from countries import main_country # arquivo
 import requests
 import json
 from time import sleep
@@ -70,12 +71,12 @@ if __name__ == "__main__":
         prompt_type = ask_choice(
             "Modo de uso",
             {
-                "1": "Gemini API",
-                "2": "Nasa API",
-                "3": "Mercado Financeiro",
+                "1": "Chat com Gemini AI",
+                "2": "Imagem Astronômica do Dia (NASA)",
+                "3": "Preços de Criptocorrências",
+                "4": "Informações De Países",
                 "0": "Exit",
-            },
-        )
+            },)
 
         if prompt_type == 1:
             main_run()
@@ -103,6 +104,18 @@ if __name__ == "__main__":
 
                 if continuar == 2:
                     break
+        
+        if prompt_type == 4:
+            pais_c = ask_choice(
+            "Modo de uso",
+            {
+                "1": "País",
+                "2": "Lingua"
+            },)
+
+            argumento = str(input(">> "))
+            main_country(pais_c, argumento)
+            sleep(2)
 
 
         
