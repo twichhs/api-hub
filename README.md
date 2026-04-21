@@ -4,11 +4,17 @@ Um hub interativo que integra múltiplas APIs com o objetivo de **incentivar a c
 
 > **Philosophia**: Código livre para adaptar, modificar e estender. Construa seu próprio "Claude Code" criando funções personalizadas para qualquer API que você desejar integrar!
 
----
 
+
+## DEMO - Gemini API
+<div align="center">
+  <img src="download.gif" />
+</div>
+
+---
 ## Recursos Principais
 
-O API Hub fornece acesso a três integrações prontas, mas você pode adicionar quantas quiser:
+O API Hub fornece acesso a quatro integrações prontas, mas você pode adicionar quantas quiser:
 
 ### 1. Chat com Gemini AI (Google)
 - Chat interativo com assistente IA poderoso
