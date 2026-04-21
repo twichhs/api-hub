@@ -32,12 +32,16 @@ O API Hub fornece acesso a três integrações prontas, mas você pode adicionar
 - Sem necessidade de chave de API!
 - **Extensível**: Adicione análises técnicas, alertas de preço, histórico
 
+### 4. Informações de Países
+- Pesquise as informações gerais de qualquer país
+- Consulta via nome ou linguagem
+- Sem necessidade de chave de API!
 ---
 
 ## Stack Tecnológico
 
 ```
-Python 3.8+
+Python 3.8+ (recomendo fortemente usar o python 3.13)
 ├── google-genai         # SDK Google Gemini
 ├── requests            # Requisições HTTP
 ├── python-dotenv       # Gerenciamento de variáveis de ambiente
